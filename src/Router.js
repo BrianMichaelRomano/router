@@ -14,7 +14,7 @@ export default class Router {
 
   route() {
     const currentRoute = location.hash.substring(1, location.hash.length);
-    console.log(currentRoute);
+
     if (this.components[currentRoute]) {
       document.querySelector(this.outlet).innerHTML = this.components[
         currentRoute
